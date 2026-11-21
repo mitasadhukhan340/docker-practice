@@ -34,7 +34,7 @@ def root():
     return {
         "application": settings.app_name,
         "environment": settings.environment,
-        "status": "running",
+        "status": "running-phase 3 build",
     }
 
 @app.get("/health")
@@ -69,3 +69,4 @@ def create_order(order: OrderRequest):
         "unit_price": product["price"],
         "total": total,
     }
+# phase 4 cache test
